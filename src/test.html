@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD 2 HTML Tester</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="md2html.js"></script>
+    <script>
+        // Test Code
+        // I am fetching from my Oscilloscope Onine V2 Repo
+        const README = 'https://raw.githubusercontent.com/MUmarShahbaz/Oscilloscope-Online-V2/refs/heads/main/README.md';
+        document.addEventListener('DOMContentLoaded', async () => {
+            document.body.innerHTML = await md2html(README);
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
